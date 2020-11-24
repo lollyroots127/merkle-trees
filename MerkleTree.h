@@ -56,7 +56,7 @@ class MerkleTree
 		/* Inserts a value into the tree, creating a node for it and updating all parent nodes
 		 *
 		 */
-		void insertNum(int num);
+		void insertNum(const int num);
 	
 
 		/* Returns the hash key of the root node of the tree
