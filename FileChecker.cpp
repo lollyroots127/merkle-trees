@@ -26,6 +26,6 @@ using namespace std;
 /**
  * Function that performs a deep copy of the tree into another pre-existing tree
  */
-// Node * FileChecker::compareHashRoot(tree1,tree2){
+// Node * FileChecker::compareHashRoot(MerkleTree * tree1, MerkleTree * tree2){
 
 }
