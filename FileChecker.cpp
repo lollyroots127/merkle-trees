@@ -2,7 +2,7 @@
 // First, it creates a clone of the merkel tree using the root node.
 // Then, it will have to ensure that the files copied are exactly the same and there was no issue in the cloning process by comparing root nodes.
 
-
+#include "FileChecker.h"
 #include "MerkleTree.h"
 #include <iostream>
 
@@ -10,10 +10,9 @@ using namespace std;
 
 
 /**
- * Function does a deep copy of the tree onto a pre-exisiting tree
- * Returns a reference to the newly copied node
+ * Function that does a deep copy
  */
-Node * clone( Node *t) const
+/* Node * FileChecker::clone( Node *t) const
     {
       //implement here
       if (t == NULL) return NULL;
@@ -22,12 +21,11 @@ Node * clone( Node *t) const
       copyNode->left = clone(t->left);
       copyNode->right = clone(t->right);
       return copyNode;
-    }
+    }*/
 
 /**
- * Function that takes the input of pointers to two trees and compares their hashkeys at the root node
- * Returns a reference to the root node if they have the same hashkey
+ * Function that performs a deep copy of the tree into another pre-existing tree
  */
-Node * compareHashRoot(MerkleTree * tree1, MerkleTree * tree2){
+// Node * FileChecker::compareHashRoot(tree1,tree2){
 
 }

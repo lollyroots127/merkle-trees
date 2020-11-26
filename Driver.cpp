@@ -18,10 +18,10 @@ int main( )
 
 
     cout << "Implementation of Merkle Tree" << endl;
-    cout << "We will be duplicating the contents of entered file in another directory"
+    cout << "We will be duplicating the contents of entered file in another directory" ;
 
 
-    MerkleTree t();
+    MerkleTree t;
 
     cout << "Inserting file with data e.g( ***.txt)" << endl;
     cout << "Enter file name then key-:    ";

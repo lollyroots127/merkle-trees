@@ -7,10 +7,10 @@ class FileChecker
     public:
 
     //Function that takes the input of pointers to two trees and compares their hashkeys at the root node
-    Node * compareHashRoot(MerkleTree * tree1, MerkleTree *tree2);
+    void compareHashRoot(tree1,tree2);
 
     //Function that performs a deep copy of the tree into another pre-existing tree
-    Node * clone( Node *t) const
+    void clone( Node *t) const
 
 
 }

@@ -7,31 +7,7 @@ using namespace std;
 // Default Constructor
 MerkleTree::MerkleTree( )
 {
-
-}
-
-//Deconstructor
-MerkleTree::~MerkleTree()
-{
-
-}
-
-/* Hashing function that will be used for every node
- * num: interger number put into the hashing function
- * output: a hashkey that represents the inputted number
- *
- */
-int MerkleTree::hash(int num)
-{
-  return 0;
-}
-
-/*
- * Returns the root node of the tree
- */
-Node* getRoot()
-{
-  return parent;
+  Root = new Node;
 }
 
 
@@ -42,28 +18,31 @@ Node* getRoot()
  */
 int find( int key)
 {
-  if (tree == NULL)
+ // tree = new Node( -1, NULL, NULL,NULL);
+
+  if (key == NULL)
   {
     return NULL;
   }
-  if (tree->key == key)
+ /* if (Root->key == key)
   {
-    return tree;
+    return Root;
   }
-  else if (key < tree->key)
+  else if (key < Root->key)
   {
-    return find(tree->left, key);
+   // return find(tree->left, key);
   }
   else
-  {
-    return find(tree->right, key);
-  }
+  {*/
+  //  return find(tree->right, key);
+
 }
 
 /* this function inserts the newly created node
    in the existing Binary Tree */
-void insertNum(Node *item)
-{
+void insertNum(int item)
+{/*
+  tree = Root;
 
   if (item->key < tree->key)
   {
@@ -74,7 +53,7 @@ void insertNum(Node *item)
     }
     else
     {
-      insert_element(tree->left, item);
+      insertNum(tree->left, item);
       return;
     }
   }
@@ -84,13 +63,13 @@ void insertNum(Node *item)
     if (tree->right == NULL)
     {
       tree->right = item;
-      return;
+
     }
     else
     {
-      insert_element(tree->right, item);
+      insertNum(tree->right, item);
       return;
-    }
+    }*/
   }
 }
 
@@ -118,5 +97,5 @@ void deleteNum(int num)
  */
 void updateHash(Node* ptr)
 {
-  
+
 }
