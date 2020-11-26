@@ -1,13 +1,37 @@
 #include "MerkleTree.h"
 
-#include <iostream> 
+#include <iostream>
 #include <cmath>
 using namespace std;
 
 // Default Constructor
-MerkelTree::MerkelTree( )
+MerkleTree::MerkleTree( )
 {
-  
+
+}
+
+//Deconstructor
+MerkleTree::~MerkleTree()
+{
+
+}
+
+/* Hashing function that will be used for every node
+ * num: interger number put into the hashing function
+ * output: a hashkey that represents the inputted number
+ *
+ */
+int MerkleTree::hash(int num)
+{
+  return 0;
+}
+
+/*
+ * Returns the root node of the tree
+ */
+Node* getRoot()
+{
+  return parent;
 }
 
 
@@ -18,7 +42,7 @@ MerkelTree::MerkelTree( )
  */
 int find( int key)
 {
-  if (tree == NULL) 
+  if (tree == NULL)
   {
     return NULL;
   }
@@ -36,11 +60,11 @@ int find( int key)
   }
 }
 
-/* this function inserts the newly created node 
+/* this function inserts the newly created node
    in the existing Binary Tree */
 void insertNum(Node *item)
 {
- 
+
   if (item->key < tree->key)
   {
     if (tree->left == NULL)
@@ -54,7 +78,7 @@ void insertNum(Node *item)
       return;
     }
   }
- 
+
   else if (item->key > tree->key)
   {
     if (tree->right == NULL)
@@ -69,4 +93,30 @@ void insertNum(Node *item)
     }
   }
 }
- 
+
+/* Returns the hash key of the root node of the tree
+ * Compare this to the hash key of another tree to see if the two trees are the same
+ * output: hashKey of the Root node of the tree
+ *
+ */
+int getRootHash()
+{
+  return 0;
+}
+
+/* Deletes a node from the tree, doing rotations if necessary and updating parent nodes
+ *
+ */
+void deleteNum(int num)
+{
+
+}
+
+/* Updates the hashkey for a parent node if any data in the child nodes has changed
+ * Call this when a subtree is changed, the root hash needs to change
+ * This function should call itself on the parent of the current node once it is done
+ */
+void updateHash(Node* ptr)
+{
+  
+}

@@ -39,6 +39,13 @@ class MerkleTree
 		Node *Root;
 
 	public:
+
+		//Constructor
+		MerkleTree();
+
+		//Deconstructor
+		~MerkleTree();
+
 		/* Hashing function that will be used for every node
 		 * num: interger number put into the hashing function
 		 * output: a hashkey that represents the inputted number
