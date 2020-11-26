@@ -10,7 +10,7 @@ using namespace std;
 
 
 //Function that does a deep copy
-Node * clone( Node *t) const
+/*MerkleTree::Node * clone( Node *t) const
     {
       //implement here
       if (t == NULL) return NULL;
@@ -19,8 +19,8 @@ Node * clone( Node *t) const
       copyNode->left = clone(t->left);
       copyNode->right = clone(t->right);
       return copyNode;
-    }
+    }*/
 
-Node * compareHashRoot(tree1,tree2){
+// Node * compareHashRoot(tree1,tree2){
     
 }
