@@ -13,7 +13,8 @@ using namespace std;
 int main( )
 {
 
-  //int choice, key, value, n, c;
+  //int choice, value, n, c;
+  int key;
   string file;
 
 
