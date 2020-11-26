@@ -10,6 +10,29 @@ MerkleTree::MerkleTree( )
   Root = new Node;
 }
 
+//Default deconstructor
+MerkleTree::~MerkleTree( )
+{
+
+}
+
+/**
+ * Hashing function that will be used for every node
+ * num: interger number put into the hashing function
+ * output: a hashkey that represents the inputted number
+ */
+int hash(int num)
+{
+  return 0;
+}
+
+/**
+ * Returns the root node of the tree
+ */
+Node* getRoot()
+{
+  return parent;
+}
 
 /*
  * this function finds the given key in the Binary Tree
