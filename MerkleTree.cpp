@@ -1,13 +1,13 @@
 #include "MerkleTree.h"
 
 #include <iostream> 
-#include <cmath>
+
 using namespace std;
 
 // Default Constructor
-MerkelTree::MerkelTree( )
+MerkleTree::MerkleTree( )
 {
-  
+  Root = new Node;
 }
 
 
@@ -18,29 +18,32 @@ MerkelTree::MerkelTree( )
  */
 int find( int key)
 {
-  if (tree == NULL) 
+ // tree = new Node( -1, NULL, NULL,NULL);
+
+  if (key== NULL) 
   {
     return NULL;
   }
-  if (tree->key == key)
+ /* if (Root->key == key)
   {
-    return tree;
+    return Root;
   }
-  else if (key < tree->key)
+  else if (key < Root->key)
   {
-    return find(tree->left, key);
+   // return find(tree->left, key);
   }
   else
-  {
-    return find(tree->right, key);
-  }
+  {*/
+  //  return find(tree->right, key);
+  
 }
 
 /* this function inserts the newly created node 
    in the existing Binary Tree */
-void insertNum(Node *item)
-{
- 
+void insertNum(int item)
+{/*
+  tree = Root;
+
   if (item->key < tree->key)
   {
     if (tree->left == NULL)
@@ -50,7 +53,7 @@ void insertNum(Node *item)
     }
     else
     {
-      insert_element(tree->left, item);
+      insertNum(tree->left, item);
       return;
     }
   }
@@ -60,13 +63,13 @@ void insertNum(Node *item)
     if (tree->right == NULL)
     {
       tree->right = item;
-      return;
+      
     }
     else
     {
-      insert_element(tree->right, item);
+      insertNum(tree->right, item);
       return;
-    }
+    }*/
   }
-}
+
  
