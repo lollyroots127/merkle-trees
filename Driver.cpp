@@ -4,6 +4,8 @@
 
 #include <iostream>
 #include <fstream>
+#include "MerkleTree.h"
+#include "FileChecker.h"
 using namespace std;
 
 
@@ -33,11 +35,8 @@ int main( )
       while ( fin >> x ){
         t.insertNum(x);
       }
-
     }
         
-         
-
   return 0;
   
   
