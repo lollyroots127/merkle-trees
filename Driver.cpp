@@ -11,5 +11,34 @@ using namespace std;
 int main( )
 {
   
+  int choice, key, value, n, c;
+  string file;
+ 
+
+    cout << "Implementation of Merkle Tree" << endl;
+    cout << "We will be duplicating the contents of entered file in another directory" 
+     
+          
+    MerkleTree t();
+  
+    cout << "Inserting file with data e.g( ***.txt)" << endl;
+    cout << "Enter file name then key-:    ";
+    cin >> file >> key;
+
+    ifstream fin( file );
+    if ( fin.is_open() )
+    {
+        double x; 
+        int i;
+      while ( fin >> x ){
+        t.insertNum(x);
+      }
+
+    }
+        
+         
+
+  return 0;
+  
   
 }
