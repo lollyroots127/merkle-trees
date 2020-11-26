@@ -32,8 +32,8 @@ class MerkleTree
 			};
 
 
-			Node( int key = -1, Node* leftptr = nullptr, Node* rightptr = nullptr,Node* parentptr = nullptr)
-				: hashKey{key}, left{leftptr},right{rightptr},parent{parentptr} {};
+			Node( int key = -1, Node* leftptr = nullptr, Node* rightptr = nullptr, Node* parentptr = nullptr)
+				: hashKey{key}, left{leftptr}, right{rightptr}, parent{parentptr} {};
 		};
 
 		Node *Root;
