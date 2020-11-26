@@ -10,7 +10,7 @@ using namespace std;
 
 
 //Function that does a deep copy
-Node * clone( BinaryNode *t) const
+Node * clone( Node *t) const
     {
       //implement here
       if (t == NULL) return NULL;
@@ -21,4 +21,6 @@ Node * clone( BinaryNode *t) const
       return copyNode;
     }
 
-Node * compareHashRoot()
+Node * compareHashRoot(tree1,tree2){
+    
+}
