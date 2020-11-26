@@ -10,7 +10,7 @@ class FileChecker
     void compareHashRoot(MerkleTree * tree1,MerkleTree * tree2);
 
     //Function that performs a deep copy of the tree into another pre-existing tree
-    void clone( Node *t) const
+    void clone( Node *t) const;
 
 
 }
