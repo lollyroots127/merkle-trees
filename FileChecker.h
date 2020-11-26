@@ -4,6 +4,8 @@
 class FileCheker
 {
     
+    public:
+    
     //Function that takes the input of pointers to two trees and compares their hashkeys at the root node
     Node * compareHashRoot(tree1,tree2);
     
