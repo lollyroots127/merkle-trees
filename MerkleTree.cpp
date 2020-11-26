@@ -21,7 +21,7 @@ MerkleTree::~MerkleTree( )
  * num: interger number put into the hashing function
  * output: a hashkey that represents the inputted number
  */
-int hash(int num)
+int MerkleTree::hash(int num)
 {
   return 0;
 }
@@ -29,7 +29,7 @@ int hash(int num)
 /**
  * Returns the root node of the tree
  */
-Node* getRoot()
+Node* MerkleTree::getRoot()
 {
   return parent;
 }
@@ -39,7 +39,7 @@ Node* getRoot()
  * returns the node containing the key
  * returns NULL in case key is not present
  */
-int find( int key)
+int MerkleTree::find( int key)
 {
  // tree = new Node( -1, NULL, NULL,NULL);
 
@@ -63,7 +63,7 @@ int find( int key)
 
 /* this function inserts the newly created node
    in the existing Binary Tree */
-void insertNum(int item)
+void MerkleTree::insertNum(int item)
 {/*
   tree = Root;
 
@@ -101,7 +101,7 @@ void insertNum(int item)
  * output: hashKey of the Root node of the tree
  *
  */
-int getRootHash()
+int MerkleTree::getRootHash()
 {
   return 0;
 }
@@ -109,7 +109,7 @@ int getRootHash()
 /* Deletes a node from the tree, doing rotations if necessary and updating parent nodes
  *
  */
-void deleteNum(int num)
+void MerkleTree::deleteNum(int num)
 {
 
 }
@@ -118,7 +118,7 @@ void deleteNum(int num)
  * Call this when a subtree is changed, the root hash needs to change
  * This function should call itself on the parent of the current node once it is done
  */
-void updateHash(Node* ptr)
+void MerkleTree::updateHash(Node* ptr)
 {
 
 }
