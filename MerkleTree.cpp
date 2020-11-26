@@ -4,6 +4,12 @@
 #include <cmath>
 using namespace std;
 
+// Default Constructor
+MerkelTree::MerkelTree( )
+{
+  
+}
+
 
 /*
  * this function finds the given key in the Binary Tree
